@@ -3,6 +3,7 @@ package main
 import (
 	"embed"
 	"io/fs"
+	"fmt"
 	"net/http"
 )
 
@@ -16,8 +17,10 @@ func clientHandler() http.Handler {
 
 }
 func main() {
+	port := ":3010"
 	mux := http.NewServeMux()
 	mux.Handle("/", clientHandler())
-	http.ListenAndServe(":3000", mux)
+	fmt.Printf("Listening on port %v", port)
+	http.ListenAndServe(port, mux)
 
 }
