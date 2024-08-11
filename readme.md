@@ -1,5 +1,7 @@
 ## Go embed
 
+This project embeds client web application to single golang binary. Same client files are served bu golang http server
+
 ### Install Go 1.16 or later
 
 Instructions are [here](https://golang.org/dl/) as of this writing on 2021-02-01.
