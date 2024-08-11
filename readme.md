@@ -1,6 +1,6 @@
 ## Go embed
 
-### Install Go 1.16rc1
+### Install Go 1.16 or later
 
 Instructions are [here](https://golang.org/dl/) as of this writing on 2021-02-01.
 
